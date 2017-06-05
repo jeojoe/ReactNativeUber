@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import initStore from './redux/store';
-import Home from './screens/Home';
+
+// Navigators
+import { MainNavigator } from './navigators';
 
 class RootNavigator extends Component {
   render() {
-    return <Home />;
+    return <MainNavigator />;
   }
 }
+
 const store = initStore();
 
 export default () => (
